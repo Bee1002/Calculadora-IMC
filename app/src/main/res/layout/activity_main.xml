@@ -23,27 +23,44 @@
         android:padding="8dp">
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="Peso"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/"
+           android:text="Calculadora"
+           android:textSize="24sp"
+           android:layout_marginTop="32dp"
+           android:layout_marginStart="16dp"
+           app:layout_contraintEnd_toEndOf="parent"
+           app:layout_contraintStar_toStarOf="parent"
+           app:layout_contraintTop_toTopOf="parent"/>
 
-        <LinearLayout
+        <EditText
+            android:id="@+id/"
+            android:width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Introduce el valor"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="32dp"
+            app:layout_contraintEnd_toEndOf="parent"
+            app:layout_contraintStar_toStarOf="parent"
+            android:padding="10dp"/>
+
+
+
+       -<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
 
-            <Button
+            <!--<Button
                 android:id="@+id/removeWeightButton"
                 style="?attr/materialIconButtonFilledStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/ic_remove_24" />
+                app:icon="@drawable/ic_remove_24" /> -->
 
             <TextView
                 android:id="@+id/weightTextView"
@@ -55,12 +72,12 @@
                 android:textSize="48sp"
                 android:textStyle="bold" />
 
-            <Button
+           <!-- <Button
                 android:id="@+id/addWeightButton"
                 style="?attr/materialIconButtonFilledStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:icon="@drawable/ic_add_24" />
+                app:icon="@drawable/ic_add_24" /> -->
 
         </LinearLayout>
 
@@ -116,68 +133,6 @@
 
     </LinearLayout>
     </androidx.cardview.widget.CardView>
-
-    <!--Edad -->
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:elevation="8dp"
-        app:cardCornerRadius="16dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="8dp">
-
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="Edad"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center_vertical"
-                android:orientation="horizontal">
-
-
-                <Button
-                    android:id="@+id/removeWeightButton2"
-                    style="?attr/materialIconButtonFilledStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:icon="@drawable/ic_remove_24" />
-
-                <TextView
-                    android:id="@+id/weightTextView"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="12 age"
-                    android:textAlignment="center"
-                    android:textSize="48sp"
-                    android:textStyle="bold" />
-
-                <Button
-                    android:id="@+id/addWeightButton2"
-                    style="?attr/materialIconButtonFilledStyle"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:icon="@drawable/ic_add_24" />
-
-            </LinearLayout>
-
-        </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
-
 
 
 <!--Result -->
