@@ -39,7 +39,7 @@
             android:id="@+id/"
             android:width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Introduce el valor"
+            android:hint="Introduce el valo"
             android:inputType="numberDecimal"
             android:layout_marginTop="32dp"
             app:layout_contraintEnd_toEndOf="parent"
